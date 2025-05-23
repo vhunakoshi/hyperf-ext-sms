@@ -7,7 +7,7 @@
 ## 安装
 
 ```shell script
-composer require vhunakoshi/hyperf-ext-sms
+composer require vhunakoshi/hyperf-ext-sms-provider
 ```
 
 ## 配置
@@ -15,7 +15,7 @@ composer require vhunakoshi/hyperf-ext-sms
 ### 发布配置
 
 ```shell script
-php bin/hyperf.php vendor:publish vhunakoshi/hyperf-ext-sms
+php bin/hyperf.php vendor:publish vhunakoshi/hyperf-ext-sms-provider
 ```
 
 ### 发送器配置

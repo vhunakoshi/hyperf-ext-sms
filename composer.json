@@ -34,7 +34,6 @@
         "ext-simplexml": "*",
         "ext-swoole": "*",
         "giggsey/libphonenumber-for-php": "^9.0",
-        "hyperf-ext/contract": "^2.2",
         "hyperf/async-queue": "^3.1",
         "hyperf/command": "^3.1",
         "hyperf/config": "^3.1",
@@ -43,11 +42,14 @@
         "hyperf/event": "^3.1",
         "hyperf/framework": "^3.1",
         "hyperf/guzzle": "^3.1",
-        "hyperf/logger": "^3.1"
+        "hyperf/logger": "^3.1",
+        "vhunakoshi/hyperf-ext-contract": "dev-main"
     },
     "suggest": {
         "hyperf/validation": "Required to use the validation."
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "config": {
         "sort-packages": true
     },
