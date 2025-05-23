@@ -1,5 +1,5 @@
 {
-    "name": "vhunakoshi/hyperf-ext-sms",
+    "name": "vhunakoshi/hyperf-ext-sms-provider",
     "type": "library",
     "license": "MIT",
     "keywords": [
@@ -9,6 +9,10 @@
     ],
     "description": "The Hyperf SMS package.",
     "authors": [
+        {
+            "name": "Eric Zhu",
+            "email": "eric@zhu.email"
+        },
         {
             "name": "Taufiq Vhunakoshi",
             "email": "vhunakoshi@email.com"
