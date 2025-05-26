@@ -8,13 +8,13 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/vhunakoshi/hyperf-ext-sms/blob/master/LICENSE
  */
-namespace HyperfExt\Sms\Contracts;
+namespace Vhunakoshi\Sms\Contracts;
 
 /**
  * @property string[]                    $senders
  * @property string                      $strategy
  * @property null|string                 $from
- * @property \HyperfExt\Sms\Contracts\MobileNumberInterface $to
+ * @property \Vhunakoshi\Sms\Contracts\MobileNumberInterface $to
  * @property null|string                 $content
  * @property null|string                 $template
  * @property null|string                 $signature
@@ -93,7 +93,7 @@ interface SmsableInterface
     /**
      * Send the SMS message immediately.
      *
-     * @throws \HyperfExt\Sms\Exceptions\DriverErrorException
+     * @throws \Vhunakoshi\Sms\Exceptions\DriverErrorException
      */
     public function send(?SenderInterface $sender = null): array;
 

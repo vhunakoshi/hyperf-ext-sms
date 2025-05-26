@@ -8,11 +8,11 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/vhunakoshi/hyperf-ext-sms/blob/master/LICENSE
  */
-namespace HyperfExt\Sms\Strategies;
+namespace Vhunakoshi\Sms\Strategies;
 
-use HyperfExt\Sms\Concerns\HasSenderFilter;
-use HyperfExt\Sms\Contracts\MobileNumberInterface;
-use HyperfExt\Sms\Contracts\StrategyInterface;
+use Vhunakoshi\Sms\Concerns\HasSenderFilter;
+use Vhunakoshi\Sms\Contracts\MobileNumberInterface;
+use Vhunakoshi\Sms\Contracts\StrategyInterface;
 
 class OrderStrategy implements StrategyInterface
 {

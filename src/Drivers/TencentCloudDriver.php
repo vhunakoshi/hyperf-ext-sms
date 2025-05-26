@@ -8,11 +8,11 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/vhunakoshi/hyperf-ext-sms/blob/master/LICENSE
  */
-namespace HyperfExt\Sms\Drivers;
+namespace Vhunakoshi\Sms\Drivers;
 
 use Hyperf\Utils\Arr;
-use HyperfExt\Sms\Contracts\SmsableInterface;
-use HyperfExt\Sms\Exceptions\DriverErrorException;
+use Vhunakoshi\Sms\Contracts\SmsableInterface;
+use Vhunakoshi\Sms\Exceptions\DriverErrorException;
 
 /**
  * @see https://cloud.tencent.com/document/product/382/38763

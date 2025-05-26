@@ -8,7 +8,7 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/vhunakoshi/hyperf-ext-sms/blob/master/LICENSE
  */
-namespace HyperfExt\Sms\Contracts;
+namespace Vhunakoshi\Sms\Contracts;
 
 interface StrategyInterface
 {

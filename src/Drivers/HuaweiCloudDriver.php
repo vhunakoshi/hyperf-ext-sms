@@ -8,11 +8,11 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/vhunakoshi/hyperf-ext-sms/blob/master/LICENSE
  */
-namespace HyperfExt\Sms\Drivers;
+namespace Vhunakoshi\Sms\Drivers;
 
-use HyperfExt\Sms\Contracts\SmsableInterface;
-use HyperfExt\Sms\Exceptions\DriverErrorException;
-use HyperfExt\Sms\Exceptions\RequestException;
+use Vhunakoshi\Sms\Contracts\SmsableInterface;
+use Vhunakoshi\Sms\Exceptions\DriverErrorException;
+use Vhunakoshi\Sms\Exceptions\RequestException;
 use InvalidArgumentException;
 
 class HuaweiCloudDriver extends AbstractDriver

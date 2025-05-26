@@ -28,7 +28,7 @@ php bin/hyperf.php vendor:publish vhunakoshi/hyperf-ext-sms-provider
 
 ```php
 [
-    'driver' => \HyperfExt\Sms\Drivers\AliyunDriver::class,
+    'driver' => \Vhunakoshi\Sms\Drivers\AliyunDriver::class,
     'config' => [
         'access_key_id' => '',
         'access_key_secret' => '',
@@ -43,7 +43,7 @@ php bin/hyperf.php vendor:publish vhunakoshi/hyperf-ext-sms-provider
 
 ```php
 [
-    'driver' => \HyperfExt\Sms\Drivers\BaiduCloudDriver::class,
+    'driver' => \Vhunakoshi\Sms\Drivers\BaiduCloudDriver::class,
     'config' => [
         'ak' => '',
         'sk' => '',
@@ -59,7 +59,7 @@ php bin/hyperf.php vendor:publish vhunakoshi/hyperf-ext-sms-provider
 
 ```php
 [
-    'driver' => \HyperfExt\Sms\Drivers\HuaweiCloudDriver::class,
+    'driver' => \Vhunakoshi\Sms\Drivers\HuaweiCloudDriver::class,
     'config' => [
         'endpoint' => '', // 从管理控制台获取到的 App 接入地址
         'app_key' => '',
@@ -78,7 +78,7 @@ php bin/hyperf.php vendor:publish vhunakoshi/hyperf-ext-sms-provider
 
 ```php
 [
-    'driver' => \HyperfExt\Sms\Drivers\JuheDataDriver::class,
+    'driver' => \Vhunakoshi\Sms\Drivers\JuheDataDriver::class,
     'config' => [
        'app_key' => '',
     ],
@@ -91,7 +91,7 @@ php bin/hyperf.php vendor:publish vhunakoshi/hyperf-ext-sms-provider
 
 ```php
 [
-    'driver' => \HyperfExt\Sms\Drivers\LuosimaoDriver::class,
+    'driver' => \Vhunakoshi\Sms\Drivers\LuosimaoDriver::class,
     'config' => [
        'app_key' => '',
     ],
@@ -104,7 +104,7 @@ php bin/hyperf.php vendor:publish vhunakoshi/hyperf-ext-sms-provider
 
 ```php
 [
-    'driver' => \HyperfExt\Sms\Drivers\QiniuDriver::class,
+    'driver' => \Vhunakoshi\Sms\Drivers\QiniuDriver::class,
     'config' => [
         'secret_key' => '',
         'access_key' => '',
@@ -118,7 +118,7 @@ php bin/hyperf.php vendor:publish vhunakoshi/hyperf-ext-sms-provider
 
 ```php
 [
-    'driver' => \HyperfExt\Sms\Drivers\RongCloudDriver::class,
+    'driver' => \Vhunakoshi\Sms\Drivers\RongCloudDriver::class,
     'config' => [
         'app_key' => '',
         'app_secret' => '',
@@ -132,7 +132,7 @@ php bin/hyperf.php vendor:publish vhunakoshi/hyperf-ext-sms-provider
 
 ```php
 [
-    'driver' => \HyperfExt\Sms\Drivers\RonglianDriver::class,
+    'driver' => \Vhunakoshi\Sms\Drivers\RonglianDriver::class,
     'config' => [
         'app_id' => '',
         'account_sid' => '',
@@ -148,7 +148,7 @@ php bin/hyperf.php vendor:publish vhunakoshi/hyperf-ext-sms-provider
 
 ```php
 [
-    'driver' => \HyperfExt\Sms\Drivers\SendCloudDriver::class,
+    'driver' => \Vhunakoshi\Sms\Drivers\SendCloudDriver::class,
     'config' => [
         'sms_user' => '',
         'sms_key' => '',
@@ -163,7 +163,7 @@ php bin/hyperf.php vendor:publish vhunakoshi/hyperf-ext-sms-provider
 
 ```php
 [
-    'driver' => \HyperfExt\Sms\Drivers\SmsBaoDriver::class,
+    'driver' => \Vhunakoshi\Sms\Drivers\SmsBaoDriver::class,
     'config' => [
         'user' => '',
         'password' => '',
@@ -177,7 +177,7 @@ php bin/hyperf.php vendor:publish vhunakoshi/hyperf-ext-sms-provider
 
 ```php
 [
-    'driver' => \HyperfExt\Sms\Drivers\TencentCloudDriver::class,
+    'driver' => \Vhunakoshi\Sms\Drivers\TencentCloudDriver::class,
     'config' => [
         'sdk_app_id' => '',
         'secret_id' => '',
@@ -197,7 +197,7 @@ php bin/hyperf.php vendor:publish vhunakoshi/hyperf-ext-sms-provider
 
 ```php
 [
-    'driver' => \HyperfExt\Sms\Drivers\TwilioDriver::class,
+    'driver' => \Vhunakoshi\Sms\Drivers\TwilioDriver::class,
     'config' => [
         'account_sid' => '',
         'token' => '',
@@ -215,7 +215,7 @@ php bin/hyperf.php vendor:publish vhunakoshi/hyperf-ext-sms-provider
 
 ```php
 [
-    'driver' => \HyperfExt\Sms\Drivers\UCloudDriver::class,
+    'driver' => \Vhunakoshi\Sms\Drivers\UCloudDriver::class,
     'config' => [
         'private_key' => '',
         'public_key' => '',
@@ -231,7 +231,7 @@ php bin/hyperf.php vendor:publish vhunakoshi/hyperf-ext-sms-provider
 
 ```php
 [
-    'driver' => \HyperfExt\Sms\Drivers\YunpianDriver::class,
+    'driver' => \Vhunakoshi\Sms\Drivers\YunpianDriver::class,
     'config' => [
         'api_key' => '',
         'signature' => '', // 短信签名，内容中无签名时使用
@@ -245,7 +245,7 @@ php bin/hyperf.php vendor:publish vhunakoshi/hyperf-ext-sms-provider
 
 ```php
 [
-    'driver' => \HyperfExt\Sms\Drivers\YunxinDriver::class,
+    'driver' => \Vhunakoshi\Sms\Drivers\YunxinDriver::class,
     'config' => [
        'app_key' => '',
        'app_secret' => '',
@@ -288,7 +288,7 @@ php bin/hyperf.php gen:sms VerificationCode
 您也可以通过短信消息类的 `senders` 公开属性来指定可用发送器，如果您未在短信消息类中指定，那么在发送时会自动使用配置文件中指定的发送器。
 
 ```php
-use HyperfExt\Sms\Smsable;
+use Vhunakoshi\Sms\Smsable;
 
 class VerificationCode extends Smsable
 {
@@ -337,7 +337,7 @@ public function build(SenderInterface $sender): void
 {
     return $this
         ->content('您的验证码是 123456')
-        ->signature('【HyperfExt】');
+        ->signature('【Vhunakoshi】');
 }
 ```
 
@@ -348,7 +348,7 @@ public function build(SenderInterface $sender): void
 {
     return $this
         ->template('SMS_001')
-        ->signature('【HyperfExt】')
+        ->signature('【Vhunakoshi】')
         ->with('code', '123456');
 }
 ```
@@ -360,7 +360,7 @@ public function build(SenderInterface $sender): void
 ```php
 // 在配置文件中指定
 'twillo' => [
-    'driver' => \HyperfExt\Sms\Drivers\TwilioDriver::class,
+    'driver' => \Vhunakoshi\Sms\Drivers\TwilioDriver::class,
     'config' => [
         'account_sid' => '',
         'token' => '',
@@ -392,7 +392,7 @@ namespace App\Controller;
 use App\Sms\VerificationCode;
 use Hyperf\HttpServer\Contract\RequestInterface;
 use Hyperf\HttpServer\Contract\ResponseInterface;
-use HyperfExt\Sms\Sms;
+use Vhunakoshi\Sms\Sms;
 
 class VerificationController
 {
@@ -446,11 +446,11 @@ Sms::to($request->user())
 
 #### 默认使用队列
 
-如果你希望你的短信类始终使用队列，您可以给短信消息类实现 `HyperfExt\Contract\ShouldQueue` 接口，现在即使你调用了 `send` 方法，短信依旧使用队列的方式发送。另外，如果需要将短信推送到指定队列，可以设置在短信消息类中设置 `queue` 属性。
+如果你希望你的短信类始终使用队列，您可以给短信消息类实现 `Vhunakoshi\Contract\ShouldQueue` 接口，现在即使你调用了 `send` 方法，短信依旧使用队列的方式发送。另外，如果需要将短信推送到指定队列，可以设置在短信消息类中设置 `queue` 属性。
 
 ```php
-use HyperfExt\Contract\ShouldQueue;
-use HyperfExt\Sms\Smsable;
+use Vhunakoshi\Contract\ShouldQueue;
+use Vhunakoshi\Sms\Smsable;
 
 class VerificationCode extends Smsable implements ShouldQueue
 {

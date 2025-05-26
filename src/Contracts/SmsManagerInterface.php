@@ -8,14 +8,14 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/vhunakoshi/hyperf-ext-sms/blob/master/LICENSE
  */
-namespace HyperfExt\Sms\Contracts;
+namespace Vhunakoshi\Sms\Contracts;
 
 interface SmsManagerInterface
 {
     /**
      * Send the given message immediately.
      *
-     * @throws \HyperfExt\Sms\Exceptions\StrategicallySendMessageException
+     * @throws \Vhunakoshi\Sms\Exceptions\StrategicallySendMessageException
      */
     public function sendNow(SmsableInterface $smsable): array;
 

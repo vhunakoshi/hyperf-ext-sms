@@ -8,16 +8,16 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/vhunakoshi/hyperf-ext-sms/blob/master/LICENSE
  */
-namespace HyperfExt\Sms\Drivers;
+namespace Vhunakoshi\Sms\Drivers;
 
 use Hyperf\Config\Config;
-use HyperfExt\Sms\Client;
-use HyperfExt\Sms\Contracts\DriverInterface;
+use Vhunakoshi\Sms\Client;
+use Vhunakoshi\Sms\Contracts\DriverInterface;
 
 abstract class AbstractDriver implements DriverInterface
 {
     /**
-     * @var \HyperfExt\Sms\Client
+     * @var \Vhunakoshi\Sms\Client
      */
     protected $client;
 

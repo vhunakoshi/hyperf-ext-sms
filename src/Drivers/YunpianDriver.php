@@ -8,10 +8,10 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/vhunakoshi/hyperf-ext-sms/blob/master/LICENSE
  */
-namespace HyperfExt\Sms\Drivers;
+namespace Vhunakoshi\Sms\Drivers;
 
-use HyperfExt\Sms\Contracts\SmsableInterface;
-use HyperfExt\Sms\Exceptions\DriverErrorException;
+use Vhunakoshi\Sms\Contracts\SmsableInterface;
+use Vhunakoshi\Sms\Exceptions\DriverErrorException;
 
 /**
  * @see https://www.yunpian.com/doc/zh_CN/intl/single_send.html

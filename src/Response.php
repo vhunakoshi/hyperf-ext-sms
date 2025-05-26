@@ -8,7 +8,7 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/vhunakoshi/hyperf-ext-sms/blob/master/LICENSE
  */
-namespace HyperfExt\Sms;
+namespace Vhunakoshi\Sms;
 
 use Hyperf\Utils\Contracts\Arrayable;
 use Psr\Http\Message\ResponseInterface;

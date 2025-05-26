@@ -8,10 +8,10 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/vhunakoshi/hyperf-ext-sms/blob/master/LICENSE
  */
-namespace HyperfExt\Sms\Drivers;
+namespace Vhunakoshi\Sms\Drivers;
 
 use Hyperf\Logger\LoggerFactory;
-use HyperfExt\Sms\Contracts\SmsableInterface;
+use Vhunakoshi\Sms\Contracts\SmsableInterface;
 use Psr\Container\ContainerInterface;
 
 class LogDriver extends AbstractDriver

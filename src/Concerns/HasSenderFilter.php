@@ -8,9 +8,9 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/vhunakoshi/hyperf-ext-sms/blob/master/LICENSE
  */
-namespace HyperfExt\Sms\Concerns;
+namespace Vhunakoshi\Sms\Concerns;
 
-use HyperfExt\Sms\Contracts\MobileNumberInterface;
+use Vhunakoshi\Sms\Contracts\MobileNumberInterface;
 
 trait HasSenderFilter
 {

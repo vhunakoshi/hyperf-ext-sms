@@ -8,10 +8,10 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/vhunakoshi/hyperf-ext-sms/blob/master/LICENSE
  */
-namespace HyperfExt\Sms\Exceptions;
+namespace Vhunakoshi\Sms\Exceptions;
 
 /**
- * @method \HyperfExt\Sms\Response getResponse()
+ * @method \Vhunakoshi\Sms\Response getResponse()
  */
 class RequestException extends \GuzzleHttp\Exception\RequestException
 {

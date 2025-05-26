@@ -8,7 +8,7 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/vhunakoshi/hyperf-ext-sms/blob/master/LICENSE
  */
-namespace HyperfExt\Sms\Contracts;
+namespace Vhunakoshi\Sms\Contracts;
 
 use Hyperf\Utils\Contracts\Arrayable;
 
@@ -25,7 +25,7 @@ interface MobileNumberInterface extends Arrayable
      *                                       start with a '+' followed by the country calling code, then
      *                                       "ZZ" or null can be supplied.
      *
-     * @throws \HyperfExt\Sms\Exceptions\InvalidMobileNumberException
+     * @throws \Vhunakoshi\Sms\Exceptions\InvalidMobileNumberException
      */
     public function __construct(string $number, $defaultRegion = null);
 

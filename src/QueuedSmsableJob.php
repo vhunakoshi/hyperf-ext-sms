@@ -8,15 +8,15 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/vhunakoshi/hyperf-ext-sms/blob/master/LICENSE
  */
-namespace HyperfExt\Sms;
+namespace Vhunakoshi\Sms;
 
 use Hyperf\AsyncQueue\Job;
-use HyperfExt\Sms\Contracts\SmsableInterface;
+use Vhunakoshi\Sms\Contracts\SmsableInterface;
 
 class QueuedSmsableJob extends Job
 {
     /**
-     * @var \HyperfExt\Sms\Contracts\SmsableInterface
+     * @var \Vhunakoshi\Sms\Contracts\SmsableInterface
      */
     public $smsable;
 

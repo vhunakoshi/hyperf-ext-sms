@@ -8,10 +8,10 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/vhunakoshi/hyperf-ext-sms/blob/master/LICENSE
  */
-namespace HyperfExt\Sms;
+namespace Vhunakoshi\Sms;
 
-use HyperfExt\Sms\Contracts\MobileNumberInterface;
-use HyperfExt\Sms\Exceptions\InvalidMobileNumberException;
+use Vhunakoshi\Sms\Contracts\MobileNumberInterface;
+use Vhunakoshi\Sms\Exceptions\InvalidMobileNumberException;
 use libphonenumber\NumberParseException;
 use libphonenumber\PhoneNumberFormat;
 use libphonenumber\PhoneNumberType;

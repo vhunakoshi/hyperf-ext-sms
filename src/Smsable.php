@@ -8,17 +8,17 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/vhunakoshi/hyperf-ext-sms/blob/master/LICENSE
  */
-namespace HyperfExt\Sms;
+namespace Vhunakoshi\Sms;
 
 use Hyperf\AsyncQueue\Driver\DriverFactory;
 use Hyperf\Contract\CompressInterface;
 use Hyperf\Contract\UnCompressInterface;
 use Hyperf\Utils\ApplicationContext;
-use HyperfExt\Sms\Contracts\MobileNumberInterface;
-use HyperfExt\Sms\Contracts\SenderInterface;
-use HyperfExt\Sms\Contracts\SmsableInterface;
-use HyperfExt\Sms\Contracts\SmsManagerInterface;
-use HyperfExt\Sms\Strategies\OrderStrategy;
+use Vhunakoshi\Sms\Contracts\MobileNumberInterface;
+use Vhunakoshi\Sms\Contracts\SenderInterface;
+use Vhunakoshi\Sms\Contracts\SmsableInterface;
+use Vhunakoshi\Sms\Contracts\SmsManagerInterface;
+use Vhunakoshi\Sms\Strategies\OrderStrategy;
 
 abstract class Smsable implements SmsableInterface, CompressInterface, UnCompressInterface
 {
@@ -43,7 +43,7 @@ abstract class Smsable implements SmsableInterface, CompressInterface, UnCompres
     public $from;
 
     /**
-     * @var \HyperfExt\Sms\Contracts\MobileNumberInterface
+     * @var \Vhunakoshi\Sms\Contracts\MobileNumberInterface
      */
     public $to;
 

@@ -10,9 +10,9 @@ declare(strict_types=1);
  */
 namespace %NAMESPACE%;
 
-use HyperfExt\Contract\ShouldQueue;
-use HyperfExt\Sms\Contracts\SenderInterface;
-use HyperfExt\Sms\Smsable;
+use Vhunakoshi\Contract\ShouldQueue;
+use Vhunakoshi\Sms\Contracts\SenderInterface;
+use Vhunakoshi\Sms\Smsable;
 
 class %CLASS% extends Smsable implements ShouldQueue
 {

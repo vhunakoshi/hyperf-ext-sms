@@ -8,13 +8,13 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/vhunakoshi/hyperf-ext-sms/blob/master/LICENSE
  */
-namespace HyperfExt\Sms\Listeners;
+namespace Vhunakoshi\Sms\Listeners;
 
 use Hyperf\Event\Contract\ListenerInterface;
 use Hyperf\Framework\Event\BootApplication;
 use Hyperf\Validation\Rule;
-use HyperfExt\Sms\Rules\MobileNumber;
-use HyperfExt\Sms\Rules\MobileNumberFormat;
+use Vhunakoshi\Sms\Rules\MobileNumber;
+use Vhunakoshi\Sms\Rules\MobileNumberFormat;
 
 class BootApplicationListener implements ListenerInterface
 {

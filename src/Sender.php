@@ -8,13 +8,13 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/vhunakoshi/hyperf-ext-sms/blob/master/LICENSE
  */
-namespace HyperfExt\Sms;
+namespace Vhunakoshi\Sms;
 
 use Hyperf\Utils\Traits\Macroable;
-use HyperfExt\Sms\Contracts\SenderInterface;
-use HyperfExt\Sms\Contracts\SmsableInterface;
-use HyperfExt\Sms\Events\SmsMessageSending;
-use HyperfExt\Sms\Events\SmsMessageSent;
+use Vhunakoshi\Sms\Contracts\SenderInterface;
+use Vhunakoshi\Sms\Contracts\SmsableInterface;
+use Vhunakoshi\Sms\Events\SmsMessageSending;
+use Vhunakoshi\Sms\Events\SmsMessageSent;
 use Psr\Container\ContainerInterface;
 use Psr\EventDispatcher\EventDispatcherInterface;
 
@@ -28,7 +28,7 @@ class Sender implements SenderInterface
     protected $name;
 
     /**
-     * @var \HyperfExt\Sms\Contracts\DriverInterface
+     * @var \Vhunakoshi\Sms\Contracts\DriverInterface
      */
     protected $driver;
 

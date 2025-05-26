@@ -8,12 +8,12 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/vhunakoshi/hyperf-ext-sms/blob/master/LICENSE
  */
-namespace HyperfExt\Sms;
+namespace Vhunakoshi\Sms;
 
 use GuzzleHttp\Exception\RequestException as GuzzleRequestException;
 use Hyperf\Guzzle\ClientFactory;
 use Hyperf\Utils\ApplicationContext;
-use HyperfExt\Sms\Exceptions\RequestException;
+use Vhunakoshi\Sms\Exceptions\RequestException;
 
 class Client
 {
@@ -30,7 +30,7 @@ class Client
     /**
      * Make a get request.
      *
-     * @throws \HyperfExt\Sms\Exceptions\RequestException
+     * @throws \Vhunakoshi\Sms\Exceptions\RequestException
      */
     public function get(string $url, array $query = [], array $headers = []): Response
     {
@@ -43,7 +43,7 @@ class Client
     /**
      * Make a post request.
      *
-     * @throws \HyperfExt\Sms\Exceptions\RequestException
+     * @throws \Vhunakoshi\Sms\Exceptions\RequestException
      */
     public function post(string $url, array $params = [], array $headers = []): Response
     {
@@ -56,7 +56,7 @@ class Client
     /**
      * Make a post request with json params.
      *
-     * @throws \HyperfExt\Sms\Exceptions\RequestException
+     * @throws \Vhunakoshi\Sms\Exceptions\RequestException
      */
     public function postJson(string $endpoint, array $params = [], array $headers = []): Response
     {

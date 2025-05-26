@@ -8,11 +8,11 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/vhunakoshi/hyperf-ext-sms/blob/master/LICENSE
  */
-namespace HyperfExt\Sms\Listeners;
+namespace Vhunakoshi\Sms\Listeners;
 
 use Hyperf\Event\Contract\ListenerInterface;
 use Hyperf\Validation\Event\ValidatorFactoryResolved;
-use HyperfExt\Sms\MobileNumber;
+use Vhunakoshi\Sms\MobileNumber;
 use LogicException;
 use Throwable;
 

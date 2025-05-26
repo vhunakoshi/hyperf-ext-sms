@@ -8,16 +8,16 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/vhunakoshi/hyperf-ext-sms/blob/master/LICENSE
  */
-namespace HyperfExt\Sms\Events;
+namespace Vhunakoshi\Sms\Events;
 
-use HyperfExt\Sms\Contracts\SmsableInterface;
+use Vhunakoshi\Sms\Contracts\SmsableInterface;
 
 class SmsMessageSent
 {
     /**
      * The message instance.
      *
-     * @var \HyperfExt\Sms\Contracts\SmsableInterface
+     * @var \Vhunakoshi\Sms\Contracts\SmsableInterface
      */
     public $smsable;
 

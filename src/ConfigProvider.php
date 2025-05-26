@@ -8,11 +8,11 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/vhunakoshi/hyperf-ext-sms/blob/master/LICENSE
  */
-namespace HyperfExt\Sms;
+namespace Vhunakoshi\Sms;
 
-use HyperfExt\Sms\Commands\GenSmsCommand;
-use HyperfExt\Sms\Contracts\SmsManagerInterface;
-use HyperfExt\Sms\Listeners\ValidatorFactoryResolvedListener;
+use Vhunakoshi\Sms\Commands\GenSmsCommand;
+use Vhunakoshi\Sms\Contracts\SmsManagerInterface;
+use Vhunakoshi\Sms\Listeners\ValidatorFactoryResolvedListener;
 
 class ConfigProvider
 {

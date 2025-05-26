@@ -8,29 +8,29 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/vhunakoshi/hyperf-ext-sms/blob/master/LICENSE
  */
-namespace HyperfExt\Sms;
+namespace Vhunakoshi\Sms;
 
 use Hyperf\Utils\ApplicationContext;
-use HyperfExt\Contract\HasMobileNumber;
-use HyperfExt\Sms\Contracts\SmsableInterface;
-use HyperfExt\Sms\Contracts\SmsManagerInterface;
+use Vhunakoshi\Contract\HasMobileNumber;
+use Vhunakoshi\Sms\Contracts\SmsableInterface;
+use Vhunakoshi\Sms\Contracts\SmsManagerInterface;
 
 class PendingSms
 {
     /**
      * The "to" recipient of the message.
      *
-     * @var \HyperfExt\Sms\Contracts\MobileNumberInterface
+     * @var \Vhunakoshi\Sms\Contracts\MobileNumberInterface
      */
     protected $to;
 
     /**
-     * @var \HyperfExt\Sms\Contracts\SmsManagerInterface
+     * @var \Vhunakoshi\Sms\Contracts\SmsManagerInterface
      */
     protected $manger;
 
     /**
-     * @var \HyperfExt\Sms\Contracts\SenderInterface
+     * @var \Vhunakoshi\Sms\Contracts\SenderInterface
      */
     protected $sender;
 
@@ -42,10 +42,10 @@ class PendingSms
     /**
      * Set the recipients of the message.
      *
-     * @param \HyperfExt\Contract\HasMobileNumber|string $number
+     * @param \Vhunakoshi\Contract\HasMobileNumber|string $number
      * @param null|int|string $defaultRegion
      *
-     * @throws \HyperfExt\Sms\Exceptions\InvalidMobileNumberException
+     * @throws \Vhunakoshi\Sms\Exceptions\InvalidMobileNumberException
      * @return $this
      */
     public function to($number, $defaultRegion = null)

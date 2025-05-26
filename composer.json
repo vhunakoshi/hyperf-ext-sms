@@ -20,7 +20,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "HyperfExt\\Sms\\": "src/"
+            "Vhunakoshi\\Sms\\": "src/"
         }
     },
     "autoload-dev": {
@@ -43,13 +43,11 @@
         "hyperf/framework": "^3.1",
         "hyperf/guzzle": "^3.1",
         "hyperf/logger": "^3.1",
-        "vhunakoshi/hyperf-ext-contract": "dev-main"
+        "vhunakoshi/hyperf-ext-contract": "^1.0"
     },
     "suggest": {
         "hyperf/validation": "Required to use the validation."
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "config": {
         "sort-packages": true
     },
@@ -60,7 +58,7 @@
     },
     "extra": {
         "hyperf": {
-            "config": "HyperfExt\\Sms\\ConfigProvider"
+            "config": "Vhunakoshi\\Sms\\ConfigProvider"
         }
     },
     "require-dev": {
